@@ -28,3 +28,15 @@ def preprocess_text(data):
     data['headline'] = data['headline'].apply(lambda x: " ".join([lemmatizer.lemmatize(word) for word in x.split(' ')]))
 
     return data
+
+
+if __name__ == '__main__':
+    df=pd.read_csv('../data/sarcasm_detection.csv')
+    df_copy=df.copy()
+    processed_df=preprocess_text(df)
+
+    for counter, (i,j) in enumerate(zip(df_copy.iloc[:5,]['headline'], processed_df.iloc[:5,]['headline'])):
+        print(f'Original data: {counter}')
+        print(i)
+        print(f'Processed data: {counter}')
+        print(j)
