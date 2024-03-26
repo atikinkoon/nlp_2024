@@ -1,8 +1,8 @@
 from setuptools import setup
 
-setup(name='labsnlp',
-      version='0.0.0',
-      description='4th grade, NLP 2023',
-      author='Marchenko Filip',
-      author_email='marchelaphil@gmail.com'
+setup(name='labsnlp_lab1',
+      version='0.0.1',
+      description='4th grade, NLP 2024',
+      author='Filipenko Mykyta',
+      author_email='mykyta.filipenko@stud.onu.edu.ua'
 )
