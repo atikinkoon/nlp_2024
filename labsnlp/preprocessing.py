@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 
-def preprocess_text(data):
+def preprocess_text(data : pd.DataFrame) -> pd.DataFrame:
     # removing signs, leaving only words
     print('Preprocessing text')
     print('Removing signs, leaving only words ')
